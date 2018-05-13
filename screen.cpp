@@ -27,11 +27,13 @@ static void     check_endline(t_coord *coord)
   }
 }
 
-static int      write_word(t_coord *coord, char *str)
+static int      write_word(t_coord *coord, const char *str)
 {
   unsigned int  i;
   unsigned int  ended;
-  
+  char          *tmp;
+
+  tmp = (char*)str;
   i = 0;
   ended = 0;
   while (str[i] && str[i] != ' ')
@@ -43,7 +45,7 @@ static int      write_word(t_coord *coord, char *str)
     new_line(coord);
     if (str[i])
     {
-      str[i] = '\0';
+      tmp[i] = '\0';
     }
     else
     {
@@ -57,7 +59,7 @@ static int      write_word(t_coord *coord, char *str)
   write(coord, str);
   if (ended)
   {
-    str[i] = ' ';
+    tmp[i] = ' ';
   }
   return i;
 }
@@ -78,7 +80,7 @@ int             compare_str_beg(const char *str1, const char *str2)
   return (0);
 }
 
-void            write_epur(t_coord *coord, char *str)
+void            write_epur(t_coord *coord, const char *str)
 {
   unsigned int  i;
   
@@ -102,15 +104,20 @@ void            write_string(t_coord *coord, String str)
   add_to_coords(coord, str.length(), 0);
 }
 
-void            write_newline(t_coord *coord, char *str)
+void            write_newline(t_coord *coord, const char *str)
 {
   write(coord, str);
   new_line(coord);
 }
-void            write(t_coord *coord, char *str)
+void            write(t_coord *coord, const char *str)
 {
-  display.print(str, coord->y, coord->x);
+  display.print((char *)str, coord->y, coord->x);
   add_to_coords(coord, strlen(str), 0);
+}
+
+void            write_raw(const char *str, int x, int y)
+{
+  display.print((char *)str, y, x);
 }
 
 void            clear_screen(t_coord *coord)
