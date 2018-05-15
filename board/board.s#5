@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.0.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="no"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="no"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
+</layers>
+<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<libraries>
+<library name="esp8266modules">
+<packages>
+<package name="ESP07-16PIN">
+<description>ESP8266 Module ESP-07 - 16 pins</description>
+<wire x1="-7.9" y1="12.4" x2="-7.9" y2="6.4" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="6.4" x2="-7.9" y2="-9.6" width="0.127" layer="21"/>
+<wire x1="-7.9" y1="-9.6" x2="8.1" y2="-9.6" width="0.127" layer="21"/>
+<wire x1="8.1" y1="-9.6" x2="8.1" y2="6.4" width="0.127" layer="21"/>
+<wire x1="8.1" y1="6.4" x2="8.1" y2="10.4" width="0.127" layer="21"/>
+<wire x1="8.1" y1="10.4" x2="8.1" y2="12.4" width="0.127" layer="21"/>
+<wire x1="8.1" y1="12.4" x2="6.1" y2="12.4" width="0.127" layer="21"/>
+<wire x1="6.1" y1="12.4" x2="-7.9" y2="12.4" width="0.127" layer="21"/>
+<wire x1="6.1" y1="12.4" x2="6.1" y2="10.4" width="0.127" layer="21"/>
+<wire x1="6.1" y1="10.4" x2="8.1" y2="10.4" width="0.127" layer="21"/>
+<circle x="7.1" y="11.4" radius="0.806225" width="0.127" layer="21"/>
+<circle x="7.1" y="11.4" radius="0.1" width="0.127" layer="21"/>
+<smd name="TX" x="8.2" y="5.8" dx="2.5" dy="1" layer="1" roundness="17"/>
+<smd name="RX" x="8.2" y="3.8" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO4" x="8.2" y="1.8" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO5" x="8.2" y="-0.2" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO0" x="8.2" y="-2.2" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO2" x="8.2" y="-4.2" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO15" x="8.2" y="-6.2" dx="2.5" dy="1" layer="1"/>
+<smd name="REST" x="-8.2" y="5.8" dx="2.5" dy="1" layer="1"/>
+<smd name="ADC" x="-8.2" y="3.8" dx="2.5" dy="1" layer="1"/>
+<smd name="CH_PD" x="-8.2" y="1.8" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO16" x="-8.2" y="-0.2" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO14" x="-8.2" y="-2.2" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO12" x="-8.2" y="-4.2" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO13" x="-8.2" y="-6.2" dx="2.5" dy="1" layer="1"/>
+<text x="-3.8" y="8.7" size="1.016" layer="21">ESP-07</text>
+<rectangle x1="-7" y1="8" x2="-4" y2="11" layer="21"/>
+<rectangle x1="2" y1="8" x2="5" y2="11" layer="21"/>
+<text x="-8" y="13" size="1.27" layer="25">&gt;Name</text>
+<text x="-8" y="-11.1" size="1.27" layer="27">&gt;Value</text>
+<smd name="VCC" x="-8.2" y="-8.105" dx="2.5" dy="1" layer="1"/>
+<smd name="GND" x="8.2" y="-8.105" dx="2.5" dy="1" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP07-16PIN">
+<description>ESP8266 Module ESP-07 - 16 pins</description>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="RESET" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="ADC" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="CH_PD" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="GPIO16" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="GPIO14" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="GPIO12" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="GPIO13" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="VCC" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<pin name="GND" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO15" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO0" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO5" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO4" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RX" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TX" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ESP07-16PIN">
+<description>ESP8266 Wifi module 07 - 16 pins</description>
+<gates>
+<gate name="G$1" symbol="ESP07-16PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP07-16PIN">
+<connects>
+<connect gate="G$1" pin="ADC" pad="ADC"/>
+<connect gate="G$1" pin="CH_PD" pad="CH_PD"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
+<connect gate="G$1" pin="GPIO12" pad="GPIO12"/>
+<connect gate="G$1" pin="GPIO13" pad="GPIO13"/>
+<connect gate="G$1" pin="GPIO14" pad="GPIO14"/>
+<connect gate="G$1" pin="GPIO15" pad="GPIO15"/>
+<connect gate="G$1" pin="GPIO16" pad="GPIO16"/>
+<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
+<connect gate="G$1" pin="GPIO4" pad="GPIO4"/>
+<connect gate="G$1" pin="GPIO5" pad="GPIO5"/>
+<connect gate="G$1" pin="RESET" pad="REST"/>
+<connect gate="G$1" pin="RX" pad="RX"/>
+<connect gate="G$1" pin="TX" pad="TX"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIMENSIONS" value="22.0 x 16.0 mm" constant="no"/>
+<attribute name="PINS" value="16"/>
+<attribute name="PITCH" value="0.078&quot; / 2 mm" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="pcf8575c">
+<description>&lt;b&gt;PCF8575 16-bit I/O expander for I2C-bus&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+This library contains one device - PCF8575 chip. I had to create entire package drawing by myself, because there was no chip in standard library that is packaged in SOP24 (or I was unable to find it.)
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Warning!&lt;/b&gt; Phillips datasheet says that PCF8575 is made only in SSOP24 package - it seems that the chip I used in my project was not made by Phillips, and the package &lt;b&gt;is not&lt;/b&gt; SSOP24, for sure. 
+&lt;br&gt;&lt;br&gt;
+Author: Piotr Nikiel &lt;br&gt;
+E-mail: nikl@op.pl
+&lt;br&gt;
+Student of Cracow University of Technology, Cracow, Poland.
+&lt;br&gt;&lt;br&gt;
+Feel free to modify and add new packages to this library, but leave
+information about original author. Please let me know (by email) 
+about your modifications/upgrades.</description>
+<packages>
+<package name="SOP24">
+<wire x1="0" y1="0" x2="7.62" y2="0" width="0.127" layer="21"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="15.24" width="0.127" layer="21"/>
+<wire x1="7.62" y1="15.24" x2="0" y2="15.24" width="0.127" layer="21"/>
+<wire x1="0" y1="15.24" x2="0" y2="0" width="0.127" layer="21"/>
+<circle x="1.27" y="13.97" radius="0.635" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.27" y="14.605" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$2" x="-1.27" y="13.335" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$3" x="-1.27" y="12.065" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$4" x="-1.27" y="10.795" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$5" x="-1.27" y="9.525" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$6" x="-1.27" y="8.255" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$7" x="-1.27" y="6.985" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$8" x="-1.27" y="5.715" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$9" x="-1.27" y="4.445" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$10" x="-1.27" y="3.175" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$11" x="-1.27" y="1.905" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$12" x="-1.27" y="0.635" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$13" x="8.89" y="0.635" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$14" x="8.89" y="1.905" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$15" x="8.89" y="3.175" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$16" x="8.89" y="4.445" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$17" x="8.89" y="5.715" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$18" x="8.89" y="6.985" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$19" x="8.89" y="8.255" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$20" x="8.89" y="9.525" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$21" x="8.89" y="10.795" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$22" x="8.89" y="12.065" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$23" x="8.89" y="13.335" dx="1.27" dy="0.635" layer="1"/>
+<smd name="P$24" x="8.89" y="14.605" dx="1.27" dy="0.635" layer="1"/>
+<text x="4.445" y="8.255" size="1.27" layer="21" rot="R270">PCF8575</text>
+<text x="2.54" y="6.985" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PCF8575">
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-35.56" x2="10.16" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-35.56" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="2.54" y="-27.94" size="1.778" layer="94" rot="R90">PCF8575</text>
+<text x="2.54" y="-10.16" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<pin name="P00" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="P01" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="P02" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="P03" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="P04" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="P05" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="P06" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="P07" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="P10" x="-12.7" y="-15.24" visible="pin" length="short"/>
+<pin name="P11" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="P12" x="-12.7" y="-20.32" visible="pin" length="short"/>
+<pin name="P13" x="-12.7" y="-22.86" visible="pin" length="short"/>
+<pin name="P14" x="-12.7" y="-25.4" visible="pin" length="short"/>
+<pin name="P15" x="-12.7" y="-27.94" visible="pin" length="short"/>
+<pin name="P16" x="-12.7" y="-30.48" visible="pin" length="short"/>
+<pin name="P17" x="-12.7" y="-33.02" visible="pin" length="short"/>
+<pin name="A0" x="12.7" y="7.62" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="A1" x="12.7" y="5.08" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="A2" x="12.7" y="2.54" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="!INT" x="12.7" y="-2.54" visible="pin" length="short" direction="oc" rot="R180"/>
+<pin name="SCL" x="12.7" y="-10.16" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SDA" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="-17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VSS" x="12.7" y="-22.86" visible="pin" length="short" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PCF8575C">
+<gates>
+<gate name="G$1" symbol="PCF8575" x="-22.86" y="20.32"/>
+</gates>
+<devices>
+<device name="" package="SOP24">
+<connects>
+<connect gate="G$1" pin="!INT" pad="P$1"/>
+<connect gate="G$1" pin="A0" pad="P$21"/>
+<connect gate="G$1" pin="A1" pad="P$2"/>
+<connect gate="G$1" pin="A2" pad="P$3"/>
+<connect gate="G$1" pin="P00" pad="P$4"/>
+<connect gate="G$1" pin="P01" pad="P$5"/>
+<connect gate="G$1" pin="P02" pad="P$6"/>
+<connect gate="G$1" pin="P03" pad="P$7"/>
+<connect gate="G$1" pin="P04" pad="P$8"/>
+<connect gate="G$1" pin="P05" pad="P$9"/>
+<connect gate="G$1" pin="P06" pad="P$10"/>
+<connect gate="G$1" pin="P07" pad="P$11"/>
+<connect gate="G$1" pin="P10" pad="P$13"/>
+<connect gate="G$1" pin="P11" pad="P$14"/>
+<connect gate="G$1" pin="P12" pad="P$15"/>
+<connect gate="G$1" pin="P13" pad="P$16"/>
+<connect gate="G$1" pin="P14" pad="P$17"/>
+<connect gate="G$1" pin="P15" pad="P$18"/>
+<connect gate="G$1" pin="P16" pad="P$19"/>
+<connect gate="G$1" pin="P17" pad="P$20"/>
+<connect gate="G$1" pin="SCL" pad="P$22"/>
+<connect gate="G$1" pin="SDA" pad="P$23"/>
+<connect gate="G$1" pin="VDD" pad="P$24"/>
+<connect gate="G$1" pin="VSS" pad="P$12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="DIYMall_OLED">
+<packages>
+<package name="I2C_OLED_PACKAGE">
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
+<text x="-8.9662" y="-5.1562" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="15.24" y="-5.08" size="1.27" layer="27" font="vector" align="bottom-right">&gt;VALUE</text>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<wire x1="16.51" y1="-25.4" x2="-10.16" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-25.4" x2="-11.43" y2="-24.13" width="0.127" layer="21" curve="-90"/>
+<wire x1="-11.43" y1="-24.13" x2="-11.43" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-11.43" y1="2.54" x2="-10.16" y2="3.81" width="0.127" layer="21" curve="-90"/>
+<wire x1="17.78" y1="2.54" x2="17.78" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="17.78" y1="-24.13" x2="16.51" y2="-25.4" width="0.127" layer="21" curve="-90"/>
+<wire x1="17.78" y1="2.54" x2="16.51" y2="3.81" width="0.127" layer="21" curve="90"/>
+<wire x1="16.51" y1="3.81" x2="-10.16" y2="3.81" width="0.127" layer="21"/>
+<text x="-7.62" y="-20.32" size="2.54" layer="21" font="vector">0.96" OLED</text>
+</package>
+</packages>
+<symbols>
+<symbol name="I2C_OLED_SYMBOL">
+<wire x1="-38.1" y1="17.78" x2="-27.94" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="17.78" x2="-27.94" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-2.54" x2="-38.1" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-38.1" y1="-2.54" x2="-38.1" y2="17.78" width="0.254" layer="94"/>
+<pin name="VCC" x="-43.18" y="15.24" length="middle"/>
+<pin name="GND" x="-43.18" y="10.16" length="middle"/>
+<pin name="SCL" x="-43.18" y="5.08" length="middle"/>
+<pin name="SDA" x="-43.18" y="0" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="I2C_OLED">
+<gates>
+<gate name="G$1" symbol="I2C_OLED_SYMBOL" x="38.1" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="I2C_OLED_PACKAGE">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Wurth_Elektronik_Electromechanic_Switchs_rev15b">
+<description>&lt;BR&gt;Wurth Elektronik - Switches&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-405&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/eagle"&gt;http://www.we-online.com/eagle&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither CadSoft nor WE-eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+&lt;hr&gt;
+Eagle Version 6, Library Revision 2015b, 08.04.2015&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="430456073736">
+<description>WS-TSW, 12*12mm horizontal type washable Tact switch, ,THT,  4 pins, height 7.3mm, square salmon actuator, 360gf</description>
+<wire x1="6" y1="6" x2="6" y2="-6" width="0.127" layer="51"/>
+<wire x1="6" y1="-6" x2="-6" y2="-6" width="0.127" layer="51"/>
+<wire x1="-6" y1="-6" x2="-6" y2="6" width="0.127" layer="51"/>
+<wire x1="-6" y1="6" x2="6" y2="6" width="0.127" layer="51"/>
+<wire x1="7.5" y1="6" x2="7.5" y2="-6" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-6" x2="-7.5" y2="-6" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-6" x2="-7.5" y2="6" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="6" x2="7.5" y2="6" width="0.127" layer="21"/>
+<pad name="1" x="-6.25" y="2.5" drill="1.2"/>
+<pad name="2" x="6.25" y="2.5" drill="1.2"/>
+<pad name="4" x="6.25" y="-2.5" drill="1.2"/>
+<pad name="3" x="-6.25" y="-2.5" drill="1.2"/>
+<text x="-3.544" y="6.9077" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.544" y="-7.6858" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5" y="2" size="1.27" layer="51">1</text>
+<text x="4" y="2" size="1.27" layer="51">2</text>
+<text x="-5" y="-3" size="1.27" layer="51">3</text>
+<text x="4" y="-3" size="1.27" layer="51">4</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TS2">
+<wire x1="8.89" y1="5.08" x2="8.89" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="8.89" y1="-5.08" x2="-8.89" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="-5.08" x2="-8.89" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-8.89" y1="5.08" x2="8.89" y2="5.08" width="0.254" layer="94"/>
+<text x="-24.13" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="-24.13" y="-1.778" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-3.81" y="2.54" length="middle" rot="R180"/>
+<pin name="2" x="3.81" y="2.54" length="middle"/>
+<pin name="3" x="-3.81" y="-2.54" length="middle" rot="R180"/>
+<pin name="4" x="3.81" y="-2.54" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="430456073736" prefix="SW">
+<description>WS-TSW, 12*12mm horizontal type washable Tact switch, ,THT,  4 pins, height 7.3mm, square salmon actuator, 360gf</description>
+<gates>
+<gate name="G$1" symbol="TS2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="430456073736">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<parts>
+<part name="U$1" library="esp8266modules" deviceset="ESP07-16PIN" device=""/>
+<part name="U$2" library="pcf8575c" deviceset="PCF8575C" device=""/>
+<part name="U$3" library="DIYMall_OLED" deviceset="I2C_OLED" device=""/>
+<part name="SW1" library="Wurth_Elektronik_Electromechanic_Switchs_rev15b" deviceset="430456073736" device=""/>
+<part name="SW2" library="Wurth_Elektronik_Electromechanic_Switchs_rev15b" deviceset="430456073736" device=""/>
+<part name="SW3" library="Wurth_Elektronik_Electromechanic_Switchs_rev15b" deviceset="430456073736" device=""/>
+<part name="SW4" library="Wurth_Elektronik_Electromechanic_Switchs_rev15b" deviceset="430456073736" device=""/>
+<part name="SW5" library="Wurth_Elektronik_Electromechanic_Switchs_rev15b" deviceset="430456073736" device=""/>
+<part name="SW6" library="Wurth_Elektronik_Electromechanic_Switchs_rev15b" deviceset="430456073736" device=""/>
+</parts>
+<sheets>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="U$1" gate="G$1" x="48.26" y="55.88"/>
+<instance part="U$2" gate="G$1" x="127" y="53.34"/>
+<instance part="U$3" gate="G$1" x="121.92" y="68.58"/>
+<instance part="SW1" gate="G$1" x="83.82" y="0"/>
+<instance part="SW2" gate="G$1" x="83.82" y="-15.24"/>
+<instance part="SW3" gate="G$1" x="121.92" y="-15.24"/>
+<instance part="SW4" gate="G$1" x="119.38" y="-2.54"/>
+<instance part="SW5" gate="G$1" x="81.28" y="-35.56"/>
+<instance part="SW6" gate="G$1" x="121.92" y="-38.1"/>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+</sheets>
+</schematic>
+</drawing>
+</eagle>
